@@ -1,5 +1,8 @@
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { MessageCircle } from "lucide-react";
+import LoadingSpinner from "./LoadingSpinner";
+import Breadcrumbs from "./Breadcrumbs";
 
 const products = [
   { name: "JIJI Heavyweight Hoodie", price: "Ksh 3,500" },
@@ -11,8 +14,25 @@ const products = [
 ];
 
 export default function ProductGrid() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate loading
+  React.useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section id="products" className="py-24 px-6 max-w-7xl mx-auto">
+        <LoadingSpinner />
+      </section>
+    );
+  }
   return (
-    <section id="products" className="py-24 px-6 max-w-7xl mx-auto">
+    <>
+      <Breadcrumbs />
+      <section id="products" className="py-24 px-6 max-w-7xl mx-auto">
       <motion.h2
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -73,5 +93,6 @@ export default function ProductGrid() {
         ))}
       </div>
     </section>
+    </>
   );
 }

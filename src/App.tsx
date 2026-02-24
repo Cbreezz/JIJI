@@ -3,6 +3,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
+import NewArrivals from "./components/NewArrivals";
 import ProductGrid from "./components/ProductGrid";
 import Manifesto from "./components/Manifesto";
 import SizeGuide from "./components/SizeGuide";
@@ -26,6 +27,7 @@ export default function App() {
           <main>
             <Hero />
             <Marquee />
+            <NewArrivals />
             <ProductGrid />
             <Manifesto />
             <SizeGuide />

@@ -12,6 +12,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
     @apply bg-jiji-black text-jiji-white font-sans overflow-x-hidden;
   }

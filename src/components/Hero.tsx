@@ -36,7 +36,7 @@ export default function Hero() {
               <span className="text-jiji-green">FRESHEST</span> FITS
             </h1>
             <p className="text-lg md:text-xl text-jiji-white/70 max-w-md mb-10 font-medium">
-              Hoodies, tees, sneakers, caps — all heat, no filler. DM to cop.
+              Hoodies, tees, sneakers, caps — all heat, no filler.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

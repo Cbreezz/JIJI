@@ -9,7 +9,6 @@ import Manifesto from "./components/Manifesto";
 import SizeGuide from "./components/SizeGuide";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +33,6 @@ export default function App() {
             <Contact />
           </main>
           <Footer />
-          <FloatingWhatsApp />
         </>
       )}
     </div>

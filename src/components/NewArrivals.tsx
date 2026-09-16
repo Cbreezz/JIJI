@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { MessageCircle, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const newArrivals = [
   { name: "JIJI Limited Edition Hoodie", price: "Ksh 4,500", badge: "NEW" },
@@ -59,15 +59,6 @@ export default function NewArrivals() {
               </h3>
               <p className="text-jiji-red font-bold text-lg mb-4">{item.price}</p>
 
-              <motion.a
-                href={`https://wa.me/254703779064?text=Hey Eli, I'm interested in the ${item.name}`}
-                target="_blank"
-                rel="noreferrer"
-                whileTap={{ scale: 0.95 }}
-                className="w-full bg-jiji-green text-jiji-white py-3 font-display text-lg tracking-wider flex items-center justify-center gap-2 hover:bg-jiji-red transition-all"
-              >
-                <MessageCircle className="w-4 h-4" /> COP NOW
-              </motion.a>
             </div>
           </motion.div>
         ))}

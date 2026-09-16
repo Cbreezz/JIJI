@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,9 +18,6 @@ export default function Footer() {
         </p>
 
         <div className="flex gap-8 mb-12">
-          <a href="https://wa.me/254703779064" target="_blank" rel="noreferrer" className="hover:text-jiji-green transition-colors">
-            <MessageCircle className="w-8 h-8" />
-          </a>
           <a href="https://instagram.com/jijistreets" target="_blank" rel="noreferrer" className="hover:text-jiji-red transition-colors">
             <Instagram className="w-8 h-8" />
           </a>

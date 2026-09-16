@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -40,16 +40,6 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                href="https://wa.me/254703779064"
-                target="_blank"
-                rel="noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-jiji-green text-jiji-white px-8 py-4 rounded-none font-display text-2xl tracking-wider flex items-center justify-center gap-3 hover:bg-jiji-red transition-colors"
-              >
-                <MessageCircle className="w-6 h-6" /> ORDER ON WHATSAPP
-              </motion.a>
               <motion.a
                 href="https://instagram.com/jijistreets"
                 target="_blank"

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,14 +45,6 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a
-            href="https://wa.me/254703779064"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-jiji-green p-2 rounded-full hover:bg-jiji-red transition-all hover:scale-110 active:scale-95"
-          >
-            <MessageCircle className="w-5 h-5 text-jiji-white" />
-          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -87,17 +79,6 @@ export default function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
-              <motion.a
-                href="https://wa.me/254703779064"
-                target="_blank"
-                rel="noreferrer"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 }}
-                className="flex items-center gap-3 text-jiji-green text-xl font-bold"
-              >
-                <MessageCircle /> WhatsApp Eli
-              </motion.a>
             </div>
           </motion.div>
         )}

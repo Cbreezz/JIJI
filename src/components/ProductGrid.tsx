@@ -53,7 +53,7 @@ export default function ProductGrid() {
               i % 2 === 1 ? "md:translate-y-12" : ""
             }`}
           >
-            {/* Image Placeholder */}
+            {/* Product image placeholder */}
             <div className="relative aspect-[4/5] bg-zinc-900 border border-jiji-green/20 flex items-center justify-center overflow-hidden mb-6">
               <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
               <span className="text-4xl font-display text-jiji-green/40 uppercase tracking-widest -rotate-12 border-4 border-jiji-green/20 p-4">

@@ -1,20 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# JIJI Streetwear
 
-# Run and deploy your AI Studio app
+JIJI is a modern streetwear website designed to showcase curated clothing and accessories with a bold, editorial shopping experience. The site includes a responsive navigation bar, hero section, product collections, new arrivals, brand manifesto, and contact details.
 
-This contains everything you need to run your app locally.
+## Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/598605a3-01c7-4bdc-a04c-de797620de93
+- React 19
+- TypeScript
+- Vite 6
+- Tailwind CSS 4
+- Motion for animations
+- Lucide React for icons
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js
+- npm
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:3000`.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Type-check the project
+
+```bash
+npm run lint
+```

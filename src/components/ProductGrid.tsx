@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { MessageCircle } from "lucide-react";
 import LoadingSpinner from "./LoadingSpinner";
 import Breadcrumbs from "./Breadcrumbs";
 
@@ -54,7 +53,7 @@ export default function ProductGrid() {
               i % 2 === 1 ? "md:translate-y-12" : ""
             }`}
           >
-            {/* Image Placeholder */}
+            {/* Product image placeholder */}
             <div className="relative aspect-[4/5] bg-zinc-900 border border-jiji-green/20 flex items-center justify-center overflow-hidden mb-6">
               <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
               <span className="text-4xl font-display text-jiji-green/40 uppercase tracking-widest -rotate-12 border-4 border-jiji-green/20 p-4">
@@ -73,16 +72,6 @@ export default function ProductGrid() {
                 <p className="text-jiji-red font-bold text-xl">{product.price}</p>
               </div>
             </div>
-
-            <motion.a
-              href={`https://wa.me/254703779064?text=Hey Eli, I'm interested in the ${product.name}`}
-              target="_blank"
-              rel="noreferrer"
-              whileTap={{ scale: 0.95 }}
-              className="w-full bg-jiji-white text-jiji-black py-3 font-display text-xl tracking-wider flex items-center justify-center gap-2 hover:bg-jiji-green hover:text-jiji-white transition-all"
-            >
-              <MessageCircle className="w-5 h-5" /> ORDER VIA WHATSAPP
-            </motion.a>
 
             {/* Stencil effect corners */}
             <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-jiji-green/50" />

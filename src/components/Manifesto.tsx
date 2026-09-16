@@ -39,7 +39,7 @@ export default function Manifesto() {
           className="max-w-2xl mx-auto"
         >
           <p className="text-xl md:text-2xl text-jiji-white/80 leading-relaxed mb-8 font-medium">
-            JIJI connects you to the freshest streetwear in Nairobi. Hoodies, tees, sneakers, caps — carefully picked, fairly priced, delivered with that Nairobi energy. Hit us on WhatsApp to order.
+            JIJI connects you to the freshest streetwear in Nairobi. Hoodies, tees, sneakers, caps — carefully picked, fairly priced, and delivered with that Nairobi energy.
           </p>
           
           <motion.div
